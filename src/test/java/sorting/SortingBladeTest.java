@@ -11,7 +11,7 @@ public class SortingBladeTest {
         String[] a = {"1","2","0","4"};
         SortingBlade sortingBlade = new SortingBlade();
         sortingBlade.sort(a);
-
+        sortingBlade.show(a);
 
     }
 }
