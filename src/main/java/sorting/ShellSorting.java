@@ -12,13 +12,13 @@ public class ShellSorting extends SortingBlade {
         // k 的最大值
         int k = (int) Math.floor( Math.log(len-1)/ Math.log(2.0) );
         for (int i = k; i >= -1; i--) {
-            int temp ;
+            int step ;
             //确定增量
-            if(i == -1) { temp = 1;}
-            else { temp = (int) (Math.pow(2,i) + 1); }
-            for (int j = temp ; j < len; j++) {
-                for (int l = j; l >= temp && less(a[l],a[l-temp]); l -= temp) {
-                    exch(a,l,l-temp);
+            if(i == -1) { step = 1;}
+            else { step = (int) (Math.pow(2,i) + 1); }
+            for (int j = step ; j < len; j++) {
+                for (int l = j; l >= step && less(a[l],a[l-step]); l -= step) {
+                    exch(a,l,l-step);
                 }
             }
         }
