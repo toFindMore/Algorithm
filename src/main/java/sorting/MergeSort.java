@@ -5,6 +5,7 @@ public class MergeSort extends SortingBlade{
      * 归并排序，建立辅助数组，递归
      */
     private static Comparable[] aux;//辅助数组
+
     @Override
     public void sort(Comparable[] a) {
         aux = new Comparable[a.length];

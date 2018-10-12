@@ -2,8 +2,6 @@ package sorting;
 
 import java.util.*;
 
-import static edu.princeton.cs.algs4.StdRandom.uniform;
-
 public class QuickSort extends SortingBlade {
     @Override
     public void sort(Comparable[] a) {
@@ -35,8 +33,9 @@ public class QuickSort extends SortingBlade {
     // 数组打乱
     public void shuffleArray(Comparable[] a) {
         int n = a.length;
+        Random rand = new Random();
         for (int i = 0; i < n; i++) {
-            int r = i + uniform(n-i);     // between i and n-1
+            int r = i + rand.nextInt(n-i);  // between i and n-1
             Comparable temp = a[i];
             a[i] = a[r];
             a[r] = temp;

@@ -9,8 +9,8 @@ public class Insertion extends SortingBlade {
     public void sort(Comparable[] a) {
         int len = a.length;
         for (int i = 1; i < len; i++) {
-            for (int j = i; j >=1 && less(a[j],a[j-1]) ; j--) {
-                exch(a,j,j-1);
+            for (int j = i; j >=1 && SortingBlade.less(a[j],a[j-1]) ; j--) {
+                SortingBlade.exch(a,j,j-1);
             }
         }
     }

@@ -1,7 +1,8 @@
 package sorting;
 
 public class SortingBlade {
-    public  void sort(Comparable[] a) {
+    public void sort(Comparable[] a) {
+
     }
 
     public static boolean less(Comparable v, Comparable w) {
