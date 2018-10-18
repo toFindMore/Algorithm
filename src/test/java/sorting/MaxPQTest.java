@@ -16,5 +16,6 @@ public class MaxPQTest {
         System.out.println(pq.size());
         System.out.println(pq.delMax());
         System.out.println(pq.getMax());
+
     }
 }

@@ -5,6 +5,7 @@ package javaBase;
  */
 public class StaticLearning {
     private static int cnt ;
+    public final int fianlV = 0;
 
     StaticLearning (){
         cnt ++;

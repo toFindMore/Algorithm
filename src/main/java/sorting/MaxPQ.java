@@ -6,7 +6,7 @@ package sorting;
  */
 public class MaxPQ<Key extends Comparable<Key>> {
     private Key[] pq;
-    private int N = 0;
+    private int N = 0; //pq[0]没有参加使用
 
     public MaxPQ(int maxN) {
         pq = (Key[]) new Comparable[maxN+1];
@@ -26,7 +26,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
     }
 
     public Key getMax() {
-        if(N == 0) return null;
+        if(isEmpty()) return null;
         return pq[1];
     }
 
@@ -50,7 +50,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
     private void sink(int k) {
         while(k*2 <= N) {
             int j = 2*k;
-            if(j < N && less(j,j+1)) j++;
+            if(j < N && less(j,j+1)) j++;//找两个🍃节点的最大值 🍉
             if(less(j,k)) break;
             exch(j,k);
             k = j;
