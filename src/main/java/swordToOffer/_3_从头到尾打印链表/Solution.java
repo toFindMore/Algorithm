@@ -12,7 +12,7 @@ public class Solution {
         res.add(listNode.val);
     }
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-        ArrayList<Integer> res = new ArrayList<>();
+        ArrayList<Integer> res = new ArrayList<Integer>();
         helper(res,listNode);
         return res;
     }
