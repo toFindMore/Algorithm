@@ -2,6 +2,10 @@ package ZOJ._3_Crashing_Balloon;
 
 import java.util.*;
 
+/**
+ * http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=1003
+ */
+
 public class Main {
     private static boolean flagA,flagB;
 
