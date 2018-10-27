@@ -1,4 +1,4 @@
-package ZOJ._3_Crashing_Balloon;
+package ZOJ._1003_Crashing_Balloon;
 
 import java.util.*;
 

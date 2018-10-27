@@ -1,4 +1,4 @@
-package ZOJ._1_AplusBProblem;
+package ZOJ._1001_AplusBProblem;
 
 import java.math.BigInteger;
 import java.util.Scanner;

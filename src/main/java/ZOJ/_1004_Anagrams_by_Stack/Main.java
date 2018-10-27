@@ -1,4 +1,4 @@
-package ZOJ._4_Anagrams_by_Stack;
+package ZOJ._1004_Anagrams_by_Stack;
 
 import java.util.Scanner;
 import java.util.Stack;
@@ -10,7 +10,6 @@ public class Main {
     private static String str1;
     private static String str2;
     private static StringBuilder RES = new StringBuilder();
-
 
     public static void helper(Stack<Character> stackIn,int p, String res,
                               String s) {

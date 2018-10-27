@@ -1,4 +1,4 @@
-package ZOJ._2_Fire_Net;
+package ZOJ._1002_Fire_Net;
 
 import java.util.Scanner;
 
